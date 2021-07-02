@@ -42,11 +42,6 @@ public class Interval {
                 minLeftSubtrahend = leftSubtrahend;
                 minLeftSubtrahendEnd = i;
             }
-            if (sum > maxSum) {
-                maxSum = sum;
-                first = 0;
-                last = i;
-            }
             if (sum - minLeftSubtrahend > maxSum) {
                 maxSum = sum - minLeftSubtrahend;
                 first = minLeftSubtrahendEnd + 1;
